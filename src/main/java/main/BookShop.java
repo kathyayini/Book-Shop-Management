@@ -3,7 +3,8 @@ package main;
 import java.util.Scanner;
 
 public class BookShop{
-	public static Item [] itemAvailable = new Item[50];	
+	public static Item [] itemAvailable = new Item[50];
+	private static Scanner sc;	
 	public static void main(String args[]){
         for(int i=0;i<50;i++){
             itemAvailable[i] = new Item();
@@ -36,7 +37,7 @@ public class BookShop{
         
         int take1,take2;
         int j = 0;
-        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
         Cart c1 = new Cart();
         take1 = sc.nextInt(); //product name
         while(take1 != -1){
